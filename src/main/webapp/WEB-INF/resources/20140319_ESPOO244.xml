@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Finvoices>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600244</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>0934094-1</BuyerPartyIdentifier>
+      <BuyerOrganisationName>SUOMEN LUKIOLAISTEN LIITTO RY</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>RATAVARTIJANKATU 2 C</BuyerStreetName>
+        <BuyerTownName>HELSINKI</BuyerTownName>
+        <BuyerPostCodeIdentifier>00520</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <DeliveryPartyDetails>
+      <DeliveryPartyIdentifier>0934094-1</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>SUOMEN LUKIOLAISTEN LIITTO RY</DeliveryOrganisationName>
+      <DeliveryPostalAddressDetails>
+        <DeliveryStreetName>JAKOMÄENTIE 6 a B 13</DeliveryStreetName>
+        <DeliveryPostCodeIdentifier>00770</DeliveryPostCodeIdentifier>
+      </DeliveryPostalAddressDetails>
+    </DeliveryPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>1424400016</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140210</InvoiceDate>
+      <SellersBuyerIdentifier>457021</SellersBuyerIdentifier>
+      <AgreementIdentifier>118252</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20120919</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">100,00</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText>Sierlan leirikeskuksen käyttö 27.-28.12.2013;Arvonlisävero</InvoiceFreeText>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140303</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000614244000168</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">100,00</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140303</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+</Finvoices>

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Finvoices>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>sv</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>060580-1114</BuyerPartyIdentifier>
+      <BuyerOrganisationName>TOMMILA DANIEL JOHANNES</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>FISKARGRÄNDEN 10 B 23</BuyerStreetName>
+        <BuyerTownName>ESBO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02230</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003840</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>190634</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000160</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20101005</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">95,80</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140038401</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">95,80</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>190678-077P</BuyerPartyIdentifier>
+      <BuyerOrganisationName>JAAKKOLA SAMI JOHANNES</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>TIKANKOLO 7 C 10</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02660</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003706</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>49150</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000022</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20110701</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">45,90</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140037062</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">45,90</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>sv</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>270494-231B</BuyerPartyIdentifier>
+      <BuyerOrganisationName>LEHTINEN MARKUS VALDEMAR</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>TENALAVÄGEN 316 B</BuyerStreetName>
+        <BuyerTownName>EKENÄS</BuyerTownName>
+        <BuyerPostCodeIdentifier>10620</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003866</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>93500</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000187</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20130601</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">47,90</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140038663</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">47,90</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>090567-2152</BuyerPartyIdentifier>
+      <BuyerOrganisationName>DAHLMAN LARS PETER</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>AVARUUSKATU 1 G 56</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02210</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003695</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>15089</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000008</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20040525</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">23,00</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140036953</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">23,00</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>130984-2402</BuyerPartyIdentifier>
+      <BuyerOrganisationName>TALVITIE KATIA VALENTINA MARKE</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>KLIPPINKITIE 5 A 29</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02780</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003804</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>184325</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000123</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20060928</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">47,90</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140038045</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">47,90</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>200278-165Y</BuyerPartyIdentifier>
+      <BuyerOrganisationName>LEINO JANI MARKUS</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>OKSAKARHINMÄKI 5 I 17</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02340</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003745</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>95212</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000062</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20120824</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">45,90</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140037457</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">45,90</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>151154-246D</BuyerPartyIdentifier>
+      <BuyerOrganisationName>KONTTINEN EIJA-RIITTA</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>ISOMÄKI 2 P 36</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02970</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003728</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>233972</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000045</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20090508</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">95,80</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140037282</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">95,80</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>250578-0939</BuyerPartyIdentifier>
+      <BuyerOrganisationName>LEHTO TERO TAPANI</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>METEORINKATU 5 B 28</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02210</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003744</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>93973</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000061</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20020305</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">95,80</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140037444</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">95,80</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>280181-0413</BuyerPartyIdentifier>
+      <BuyerOrganisationName>NISKANEN MIKKO JUHANI</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>JOUPINPUISTO 1 B 20</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02760</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003845</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>123814</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000166</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20120701</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">95,80</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140038456</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">95,80</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+  <Finvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.01" xsi:noNamespaceSchemaLocation="Finvoice.xsd">
+    <SellerPartyDetails>
+      <SellerPartyIdentifier>0101263-6</SellerPartyIdentifier>
+      <SellerOrganisationName>Espoon kaupunki</SellerOrganisationName>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>00370101263600230</SellerOrganisationUnitNumber>
+    <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
+    <BuyerPartyDetails>
+      <BuyerPartyIdentifier>020592-272U</BuyerPartyIdentifier>
+      <BuyerOrganisationName>MUNIR AMMARA</BuyerOrganisationName>
+      <BuyerPostalAddressDetails>
+        <BuyerStreetName>PUISTOMÄKI 1 A 10</BuyerStreetName>
+        <BuyerTownName>ESPOO</BuyerTownName>
+        <BuyerPostCodeIdentifier>02610</BuyerPostCodeIdentifier>
+      </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <InvoiceDetails>
+      <InvoiceTypeCode>INV01</InvoiceTypeCode>
+      <InvoiceTypeText>LASKU</InvoiceTypeText>
+      <OriginCode>Original</OriginCode>
+      <InvoiceNumber>914003868</InvoiceNumber>
+      <InvoiceDate Format="CCYYMMDD">20140203</InvoiceDate>
+      <SellersBuyerIdentifier>457666</SellersBuyerIdentifier>
+      <AgreementIdentifier>230000189</AgreementIdentifier>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="AddressDate">Osoitteen voimaantulo</DefinitionHeaderText>
+        <DefinitionValue>20120905</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Cost">Huomautuskulut</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <DefinitionDetails>
+        <DefinitionHeaderText DefinitionCode="Interest">Viivästyskorko</DefinitionHeaderText>
+        <DefinitionValue>0,00</DefinitionValue>
+      </DefinitionDetails>
+      <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">23,00</InvoiceTotalVatIncludedAmount>
+      <InvoiceFreeText/>
+      <PaymentTermsDetails>
+        <InvoiceDueDate Format="CCYYMMDD">20140224</InvoiceDueDate>
+      </PaymentTermsDetails>
+    </InvoiceDetails>
+    <InvoiceRow>
+      <RowIdentifier/>
+    </InvoiceRow>
+    <EpiDetails>
+      <EpiIdentificationDetails>
+        <EpiDate Format="CCYYMMDD">20140923</EpiDate>
+        <EpiReference>0</EpiReference>
+      </EpiIdentificationDetails>
+      <EpiPartyDetails>
+        <EpiBfiPartyDetails>
+          <EpiBfiIdentifier IdentificationSchemeName="BIC">BANKFIHH</EpiBfiIdentifier>
+        </EpiBfiPartyDetails>
+        <EpiBeneficiaryPartyDetails>
+          <EpiAccountID IdentificationSchemeName="IBAN">FI8913693000116787</EpiAccountID>
+        </EpiBeneficiaryPartyDetails>
+      </EpiPartyDetails>
+      <EpiPaymentInstructionDetails>
+        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">00000000609140038689</EpiRemittanceInfoIdentifier>
+        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">23,00</EpiInstructedAmount>
+        <EpiCharge ChargeOption="SHA">SHA</EpiCharge>
+        <EpiDateOptionDate Format="CCYYMMDD">20140224</EpiDateOptionDate>
+      </EpiPaymentInstructionDetails>
+    </EpiDetails>
+  </Finvoice>
+</Finvoices>
