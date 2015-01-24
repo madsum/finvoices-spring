@@ -34,6 +34,7 @@ public class InvoiceDate {
 		this.Format = format;
 	}
 	
+	//@XmlValue
 	public String getDate() {
 		return date;
 	}

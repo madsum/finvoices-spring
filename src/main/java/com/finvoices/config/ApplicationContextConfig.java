@@ -17,6 +17,8 @@ import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.finvoices.dao.BuyerPartyDetailsDAO;
@@ -31,6 +33,8 @@ import com.finvoices.service.BuyerPartyDetailsService;
 import com.finvoices.service.BuyerPostalAddressDetailsService;
 import com.finvoices.service.DefinitionDetailsService;
 import com.finvoices.service.InvoiceDetailsService;
+import com.finvoices.service.ResourceReaderService;
+import com.finvoices.service.ResourceReaderServiceImpl;
 import com.finvoices.service.XmlPaserService;
 import com.finvoices.service.XmlPaserServiceImpl;
 
@@ -44,6 +48,25 @@ public class ApplicationContextConfig {
 	@Resource
 	private Environment env;
 	
+	
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		  registry.addResourceHandler("/assets/**")
+		    .addResourceLocations("classpath:/assets/");
+		  registry.addResourceHandler("/css/**")
+		    .addResourceLocations("/css/");
+		  registry.addResourceHandler("/img/**")
+		    .addResourceLocations("/img/");
+		  registry.addResourceHandler("/resources/**")
+		    .addResourceLocations("/resources/");
+		}	
+	
+	@Bean(name = "multipartResolver")
+    public CommonsMultipartResolver getMultipartResolver() {
+		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+		multipartResolver.setMaxInMemorySize(100000);
+        return multipartResolver;
+    }
+	
 	@Bean(name = "viewResolver")
     public InternalResourceViewResolver getViewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -51,7 +74,7 @@ public class ApplicationContextConfig {
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
-     
+    
     
     // dataSource for mysql
     @Bean(name = "dataSource")
@@ -82,6 +105,7 @@ public class ApplicationContextConfig {
     	sessionBuilder.addAnnotatedClasses(BuyerPartyDetails.class);
     	sessionBuilder.addAnnotatedClasses(InvoiceDetails.class);
     	sessionBuilder.addAnnotatedClasses(DefinitionDetails.class);
+    	//sessionBuilder.addAnnotatedClasses(User2.class);
     	//sessionBuilder.addAnnotatedClasses(Shop.class);
     	//sessionBuilder.addAnnotatedClasses(Stock.class);
     	//sessionBuilder.addAnnotatedClasses(StockDetail.class);
@@ -89,6 +113,7 @@ public class ApplicationContextConfig {
     	
     	return sessionBuilder.buildSessionFactory();
     }
+    
     
 	@Autowired
 	@Bean(name = "transactionManager")
@@ -100,7 +125,13 @@ public class ApplicationContextConfig {
 		return transactionManager;
 	}
 	
-    
+    /*
+    @Autowired
+    @Bean(name = "userDao")
+    public UserDAO getUserDao(SessionFactory sessionFactory) {
+    	return new UserDAOImpl(sessionFactory);
+    }	
+	*/
     @Autowired
     @Bean(name = "buyerPostalAddressDetailsDAO")
     public BuyerPostalAddressDetailsDAO getBuyerPostalAddressDetailsDAO(SessionFactory sessionFactory) {
@@ -133,6 +164,12 @@ public class ApplicationContextConfig {
     public XmlPaserService getXmlPaserService(SessionFactory sessionFactory) {
     	return new XmlPaserServiceImpl();
     }      
+    
+    @Autowired
+    @Bean(name = "resourceReaderService")
+    public ResourceReaderService getResourceReaderService(SessionFactory sessionFactory) {
+    	return new ResourceReaderServiceImpl();
+    }        
     
 	@Bean
 	public ResourceBundleMessageSource messageSource() {

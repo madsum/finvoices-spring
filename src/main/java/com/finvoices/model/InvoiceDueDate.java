@@ -9,8 +9,8 @@ import javax.xml.bind.annotation.XmlValue;
  * @author Masum Islam
  *
  */
-public class InvoiceDueDate
-{
+public class InvoiceDueDate{
+	
 	public InvoiceDueDate(){}
 	
 	/**

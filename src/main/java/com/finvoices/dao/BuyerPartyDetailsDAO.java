@@ -2,6 +2,7 @@ package com.finvoices.dao;
 
 import java.util.List;
 
+import com.finvoices.exception.BuyerNotFound;
 import com.finvoices.model.BuyerPartyDetails;
 
 
@@ -10,7 +11,9 @@ public interface BuyerPartyDetailsDAO {
 	
 	public BuyerPartyDetails get(int id);
 	
+	public BuyerPartyDetails getByBuyerPartyIdentifier(String buyer_id);
+	
 	public void saveOrUpdate(BuyerPartyDetails buyerPartyDetails);
 	
-	public void delete(int id);
+	public BuyerPartyDetails delete(int id) throws BuyerNotFound;
 }

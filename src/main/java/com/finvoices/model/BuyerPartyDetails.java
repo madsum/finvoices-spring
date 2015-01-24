@@ -14,6 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;
 
@@ -28,6 +29,11 @@ import javax.xml.bind.annotation.XmlElements;
 public class BuyerPartyDetails implements java.io.Serializable{
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public BuyerPartyDetails(){
 					
 	}
@@ -44,8 +50,20 @@ public class BuyerPartyDetails implements java.io.Serializable{
     private String BuyerOrganisationName;
     
 	// Xml node and buyerPartyDetails.BuyerPartyIdentifier column
-	@XmlElement
+	//@XmlElement
+	@Transient
     private String BuyerPartyIdentifier;
+	// it is for database column name. Otherwise it conflicts with xml annotation
+    private String buyid;
+	
+    @Column(name = "BuyerPartyIdentifier")
+	public String getBuyid() {
+		return buyid;
+	}
+
+	public void setBuyid(String buyid) {
+		this.buyid = buyid;
+	}
 	
 
 	// Xml node and buyerPostalAddressDetails table
@@ -117,17 +135,23 @@ public class BuyerPartyDetails implements java.io.Serializable{
 
 	// must annotate in getter method for database
     // buyerPartyDetails.BuyerPartyIdentifier column
-	@Column(name = "BuyerPartyIdentifier")
+	//@Column(name = "BuyerPartyIdentifier")
+    @Transient
     public String getBuyerPartyIdentifier ()
     {
         return BuyerPartyIdentifier;
     }
 
+    @Transient
+    @XmlElement(name = "BuyerPartyIdentifier")
     public void setBuyerPartyIdentifier (String BuyerPartyIdentifier)
     {
         this.BuyerPartyIdentifier = BuyerPartyIdentifier;
+        buyid = BuyerPartyIdentifier;
     }
     
+
+
 	@Override
 	public String toString() {
 		return "BuyerPartyDetails [buyerPostalAddressDetails="

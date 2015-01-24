@@ -6,7 +6,11 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;
 
-import org.exolab.castor.types.DateTime;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
+import com.finvoices.service.Utility;
 
 /**
  * This class PaymentTermsDetails InvoiceDetails XML node.
@@ -25,7 +29,7 @@ public class PaymentTermsDetails{
 	
 	private InvoiceDetails parent;
 	private InvoiceDueDate invoiceDueDate;
-	private long long_dueDate;
+	private String dueDate;
 
     /**
      * All properties setter and getter 
@@ -35,33 +39,43 @@ public class PaymentTermsDetails{
 	public void setInvoiceDueDate(InvoiceDueDate duedata) {
 		invoiceDueDate = duedata;
 		// we have to construct it here because api calls it randomly. So we don't know how to initialize.  
-		parent = new InvoiceDetails();
+		//parent = new InvoiceDetails();
+		
+		System.out.println("content: "+duedata.getDate());
+		System.out.println("format: "+duedata.getFormat());
+		// use service class for string formating
+		String format = Utility.getDateFormatString(duedata.getFormat());
+		String dateVal = Utility.getDateValue(duedata.getDate());
+		DateTimeFormatter formatter = DateTimeFormat.forPattern(format);
+		DateTime dt = formatter.parseDateTime(dateVal);
+		dueDate = dt.toString("dd-MM-yyyy");	
+		
+		/*
 		String format = getDateFormatString(invoiceDueDate.getFormat());
 		SimpleDateFormat formatter = new SimpleDateFormat(format);
 		try {
 			String dateVal = getDateValue(duedata.getDate());
 			Date xmlDate = formatter.parse(dateVal);
 			DateTime dt = new DateTime(xmlDate);
-			long_dueDate = dt.toLong();
-			System.out.println("long date: "+long_dueDate);
-			DateTime dt2 = new DateTime(long_dueDate);
-			System.out.println("long date: "+dt2.toString());
-			parent.setInvoiceDueDate(long_dueDate);
+			dueDate = dt.toString("dd-MM-yyyy");
+			System.out.println("ldate: "+dt.toString("dd-MM-yyyy"));
+			parent.setInvoiceDueDate(dueDate);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());	
-		}		
+		}
+		*/
 	}
 	
 	public InvoiceDueDate getInvoiceDueDate() {
 		return invoiceDueDate;
 	}
 	
-	public long getLong_dueDate() {
-		return long_dueDate;
+	public String getDueDate() {
+		return dueDate;
 	}
 
-	public void setLong_dueDate(long long_dueDate) {
-		this.long_dueDate = long_dueDate;
+	public void setDueDate(String dueDate) {
+		this.dueDate = dueDate;
 	}
 
 

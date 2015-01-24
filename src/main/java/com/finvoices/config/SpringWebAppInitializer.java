@@ -23,21 +23,11 @@ public class SpringWebAppInitializer implements WebApplicationInitializer {
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
         
-        try
-        {
-			File rootDir = new File(servletContext.getRealPath("/WEB-INF/resources/20140319_ESPOO228.xml") );
-			long l = rootDir.getTotalSpace();
-			System.out.println("Size: "+l);
-        }
-        catch(Exception io)
-        {
-        	System.out.println("io exception: "+io.getMessage());
-        }
 	}
 	
     // equivalents for <mvc:resources/> tags
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    	registry.addResourceHandler("/WEB-INF/**").addResourceLocations("/WEB-INF/**").setCachePeriod(31556926);
+    	registry.addResourceHandler("/WEB-INF/resources/**").addResourceLocations("/WEB-INF/resources/**").setCachePeriod(31556926);
     	registry.addResourceHandler("/resources/**").addResourceLocations("/resources/**").setCachePeriod(31556926);
     }
 	
