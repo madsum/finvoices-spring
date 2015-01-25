@@ -33,8 +33,8 @@ CREATE TABLE  `invoiceDetails` (
   `agreementIdentifier` VARCHAR(100),
   `invoiceTotalVatIncludedAmount` VARCHAR(50),  
   `invoiceFreeText` VARCHAR(1000),
-  `invoiceDate` MEDIUMTEXT,
-  `invoiceDueDate` MEDIUMTEXT,
+  `DateInvoice` VARCHAR(50),
+  `invoiceDueDate` VARCHAR(50),
   `buyerPartyDetails_id` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`invoiceDetails_id`),
   CONSTRAINT `FK_InvoiceDetails` FOREIGN KEY (`buyerPartyDetails_id`) 

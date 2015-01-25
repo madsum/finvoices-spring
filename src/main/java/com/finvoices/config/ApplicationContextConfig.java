@@ -33,8 +33,8 @@ import com.finvoices.service.BuyerPartyDetailsService;
 import com.finvoices.service.BuyerPostalAddressDetailsService;
 import com.finvoices.service.DefinitionDetailsService;
 import com.finvoices.service.InvoiceDetailsService;
-import com.finvoices.service.ResourceReaderService;
-import com.finvoices.service.ResourceReaderServiceImpl;
+import com.finvoices.service.ViewControllerService;
+import com.finvoices.service.ViewControllerServiceImpl;
 import com.finvoices.service.XmlPaserService;
 import com.finvoices.service.XmlPaserServiceImpl;
 
@@ -50,16 +50,13 @@ public class ApplicationContextConfig {
 	
 	
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		  registry.addResourceHandler("/assets/**")
-		    .addResourceLocations("classpath:/assets/");
 		  registry.addResourceHandler("/css/**")
 		    .addResourceLocations("/css/");
-		  registry.addResourceHandler("/img/**")
-		    .addResourceLocations("/img/");
 		  registry.addResourceHandler("/resources/**")
 		    .addResourceLocations("/resources/");
 		}	
 	
+	// for file upload
 	@Bean(name = "multipartResolver")
     public CommonsMultipartResolver getMultipartResolver() {
 		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
@@ -67,6 +64,7 @@ public class ApplicationContextConfig {
         return multipartResolver;
     }
 	
+	// for view resolver
 	@Bean(name = "viewResolver")
     public InternalResourceViewResolver getViewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -83,12 +81,11 @@ public class ApplicationContextConfig {
     	dataSource.setDriverClassName("com.mysql.jdbc.Driver");
     	dataSource.setUrl("jdbc:mysql://localhost:3306/finvoices");
     	dataSource.setUsername("dev");
-    	dataSource.setPassword("dev");
-    	
+    	dataSource.setPassword("dev");    	
     	return dataSource;
     }
     
-        
+    // hibernate config    
     private Properties getHibernateProperties() {
     	Properties properties = new Properties();
     	properties.put("hibernate.show_sql", "true");
@@ -96,6 +93,7 @@ public class ApplicationContextConfig {
     	return properties;
     }
     
+    // hibernate session Factory
     @Autowired
     @Bean(name = "sessionFactory")
     public SessionFactory getSessionFactory(DataSource dataSource) {
@@ -105,41 +103,26 @@ public class ApplicationContextConfig {
     	sessionBuilder.addAnnotatedClasses(BuyerPartyDetails.class);
     	sessionBuilder.addAnnotatedClasses(InvoiceDetails.class);
     	sessionBuilder.addAnnotatedClasses(DefinitionDetails.class);
-    	//sessionBuilder.addAnnotatedClasses(User2.class);
-    	//sessionBuilder.addAnnotatedClasses(Shop.class);
-    	//sessionBuilder.addAnnotatedClasses(Stock.class);
-    	//sessionBuilder.addAnnotatedClasses(StockDetail.class);
-    	//sessionBuilder.addAnnotatedClasses(StockDailyRecord.class);
-    	
     	return sessionBuilder.buildSessionFactory();
     }
     
-    
+    // transaction Manager
 	@Autowired
 	@Bean(name = "transactionManager")
 	public HibernateTransactionManager getTransactionManager(
 			SessionFactory sessionFactory) {
 		HibernateTransactionManager transactionManager = new HibernateTransactionManager(
 				sessionFactory);
-
 		return transactionManager;
 	}
 	
-    /*
-    @Autowired
-    @Bean(name = "userDao")
-    public UserDAO getUserDao(SessionFactory sessionFactory) {
-    	return new UserDAOImpl(sessionFactory);
-    }	
-	*/
+    
     @Autowired
     @Bean(name = "buyerPostalAddressDetailsDAO")
     public BuyerPostalAddressDetailsDAO getBuyerPostalAddressDetailsDAO(SessionFactory sessionFactory) {
     	return new BuyerPostalAddressDetailsService(sessionFactory);
     }
-    
-    
-    
+      
     @Autowired
     @Bean(name = "buyerPartyDetailsDAO")
     public BuyerPartyDetailsDAO getBuyerPartyDetailsDAO(SessionFactory sessionFactory) {
@@ -163,13 +146,13 @@ public class ApplicationContextConfig {
     @Bean(name = "xmlPaserService")
     public XmlPaserService getXmlPaserService(SessionFactory sessionFactory) {
     	return new XmlPaserServiceImpl();
-    }      
+    }
     
     @Autowired
-    @Bean(name = "resourceReaderService")
-    public ResourceReaderService getResourceReaderService(SessionFactory sessionFactory) {
-    	return new ResourceReaderServiceImpl();
-    }        
+    @Bean(name = "viewControllerService")
+    public ViewControllerService getViewControllerService(SessionFactory sessionFactory) {
+    	return new ViewControllerServiceImpl();
+    }    
     
 	@Bean
 	public ResourceBundleMessageSource messageSource() {
@@ -177,33 +160,5 @@ public class ApplicationContextConfig {
 		source.setBasename(env.getRequiredProperty("message.source.basename"));
 		source.setUseCodeAsDefaultMessage(true);
 		return source;
-	}      
-    
-    
-  /*  
-    @Autowired
-    @Bean(name = "shopDao")
-    public ShopDAO getShopDAO(SessionFactory sessionFactory) {
-    	return new ShopService(sessionFactory);
-    }       
-   
-    @Autowired
-    @Bean(name = "stockDao")
-    public StockDAO getStockDAO(SessionFactory sessionFactory) {
-    	return new StockService(sessionFactory);
-    }  
-    
-    @Autowired
-    @Bean(name = "StockDetailDao")
-    public StockDetailDAO getStockDetailDAO(SessionFactory sessionFactory) {
-    	return new StockDetailService(sessionFactory);
-    }       
-   
-    @Autowired
-    @Bean(name = "stockDailyRecordDao")
-    public StockDailyRecordDAO getStockDailyRecordDAO(SessionFactory sessionFactory) {
-    	return new StockDailyRecordService(sessionFactory);
-    }   
-	*/
-  
+	}        
 }

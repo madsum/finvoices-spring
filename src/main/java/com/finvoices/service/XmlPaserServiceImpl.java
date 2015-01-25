@@ -2,17 +2,9 @@ package com.finvoices.service;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import org.codehaus.jackson.JsonGenerationException;
@@ -25,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.finvoices.dao.BuyerPartyDetailsDAO;
 import com.finvoices.dao.DefinitionDetailsDAO;
 import com.finvoices.dao.InvoiceDetailsDAO;
-import com.finvoices.model.Buyer;
 import com.finvoices.model.BuyerPartyDetails;
 import com.finvoices.model.BuyerPostalAddressDetails;
 import com.finvoices.model.DefinitionDetails;
