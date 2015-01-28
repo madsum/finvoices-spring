@@ -13,16 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.finvoices.dao.BuyerPartyDetailsDAO;
-import com.finvoices.dao.BuyerPostalAddressDetailsDAO;
-import com.finvoices.dao.DefinitionDetailsDAO;
-import com.finvoices.dao.InvoiceDetailsDAO;
 import com.finvoices.exception.BuyerNotFound;
 import com.finvoices.model.Buyer;
 import com.finvoices.model.BuyerInvoices;
 import com.finvoices.model.BuyerPartyDetails;
 import com.finvoices.service.ViewControllerService;
-import com.finvoices.service.XmlPaserService;
 
 @Controller
 @RequestMapping(value="/buyer")
@@ -32,37 +27,29 @@ public class BuyerPartyDetailsController {
 			.getLogger(BuyerPartyDetailsController.class);
 
 	@Autowired
-	private BuyerPostalAddressDetailsDAO buyerPostalAddressDetailsDAO;
-
-
-	@Autowired
-	private InvoiceDetailsDAO invoiceDetailsDAO;
-
-	@Autowired
-	private DefinitionDetailsDAO definitionDetailsDAO;
-
-	@Autowired
-	private BuyerPartyDetailsDAO buyerPartyDetailsDAO;
-
-	@Autowired
-	private XmlPaserService xmlPaserService;
-	
-	@Autowired
 	private ViewControllerService viewControllerService;
-	
-	//private List<BuyerInvoices> buyerInvoiceList;	
+
 	private HashMap<Integer, List<BuyerInvoices>> buyerInvoiceMap; 
 
+	private List<Buyer> buyerList;
+	
+	public BuyerPartyDetailsController(){
+		buyerList = new ArrayList<Buyer>();
+		buyerInvoiceMap = new HashMap<Integer, List<BuyerInvoices>>();	
+	}
+	
 	@RequestMapping(value="/listBuyer", method=RequestMethod.GET)
 	public ModelAndView listBuyerPartyDetails() {
+
+		buyerInvoiceMap.clear();
+		buyerList.clear();
 		
-		List<Buyer> buyerList = new ArrayList<Buyer>();
-		buyerInvoiceMap = new HashMap<Integer, List<BuyerInvoices>>();		
-		viewControllerService.buyerInvoiceDetails(buyerInvoiceMap, buyerList);
-				
+		viewControllerService.buyerInvoiceDetails(buyerInvoiceMap, buyerList );
+
 		ModelAndView mav = new ModelAndView("buyerList");
 		if(buyerList.size() > 0){
 			mav = new ModelAndView("buyerList");
+			logger.info("Got buyerList now retunr buyerList.jsp ");
 			mav.addObject("buyerList", buyerList);
 		}
 		else{
@@ -80,8 +67,8 @@ public class BuyerPartyDetailsController {
 		mav.addObject("message", message);
 		return mav;
 	}
-	
-	
+
+
 	@RequestMapping(value="/buyerInvoices/{id}", method=RequestMethod.GET)
 	public ModelAndView showBuyerInvoices(@PathVariable Integer id) throws BuyerNotFound {
 		ModelAndView mav = new ModelAndView("buyerInvoiceList");
@@ -90,8 +77,27 @@ public class BuyerPartyDetailsController {
 			List<BuyerInvoices> buyerInvoiceList = buyerInvoiceMap.get(id);
 			mav.addObject("buyerInvoiceList", buyerInvoiceList);
 		}
+		logger.info("Return buyerInvoiceList.jsp ");
 		return mav;
-	}	
+	}
 
+	@RequestMapping(value="/listBuyer/{xmlFile}", method=RequestMethod.GET)
+	public ModelAndView listBuyerByFile(@PathVariable("xmlFile") String xmlFile) throws BuyerNotFound {
 
+		buyerInvoiceMap.clear();
+		buyerList.clear();
+
+		viewControllerService.buyerInvoiceDetailsByFile(buyerInvoiceMap, buyerList, xmlFile);
+
+		ModelAndView mav = new ModelAndView("FilebuyerList");
+		if(buyerList.size() > 0){
+			mav = new ModelAndView("FilebuyerList");
+			logger.info("Got buyerList now retunr FilebuyerList.jsp ");
+			mav.addObject("buyerList", buyerList);
+		}
+		else{
+			mav = new ModelAndView("404");
+		}
+		return mav;
+	}
 }

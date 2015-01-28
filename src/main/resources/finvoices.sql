@@ -3,11 +3,11 @@ buyerPartyDetails has one-to-one relation with buyerPostalAddressDetails.
 definitionDetails has oone to many relation with definitionDetails
 
 
-
 CREATE TABLE `buyerPartyDetails` (
   `buyerPartyDetails_id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `buyerPartyIdentifier` VARCHAR(100) NOT NULL,
-  `buyerOrganisationName` VARCHAR(100) NOT NULL,
+  `buyerPartyIdentifier` VARCHAR(100),
+  `buyerOrganisationName` VARCHAR(100),
+  `XmlFileName` VARCHAR(100),
   PRIMARY KEY (`buyerPartyDetails_id`) 
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
@@ -35,6 +35,7 @@ CREATE TABLE  `invoiceDetails` (
   `invoiceFreeText` VARCHAR(1000),
   `DateInvoice` VARCHAR(50),
   `invoiceDueDate` VARCHAR(50),
+  `XmlFileName` VARCHAR(100),
   `buyerPartyDetails_id` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`invoiceDetails_id`),
   CONSTRAINT `FK_InvoiceDetails` FOREIGN KEY (`buyerPartyDetails_id`) 

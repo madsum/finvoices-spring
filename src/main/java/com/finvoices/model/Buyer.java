@@ -1,8 +1,11 @@
 package com.finvoices.model;
 
-import javax.persistence.Entity;
 
-@Entity
+/**
+ * Buyer class combines buyer details and buyer address into on class
+ * @author masum
+ *
+ */
 public class Buyer {
 		
 	public Buyer(){
@@ -16,8 +19,14 @@ public class Buyer {
 	private String town;
 	private String postCode;
 	private int numberOfInvoice;
-
+	private String fileName;
 	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 	public int getNumberOfInvoice() {
 		return numberOfInvoice;
 	}

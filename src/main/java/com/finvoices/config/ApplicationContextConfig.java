@@ -29,14 +29,16 @@ import com.finvoices.model.BuyerPartyDetails;
 import com.finvoices.model.BuyerPostalAddressDetails;
 import com.finvoices.model.DefinitionDetails;
 import com.finvoices.model.InvoiceDetails;
-import com.finvoices.service.BuyerPartyDetailsService;
-import com.finvoices.service.BuyerPostalAddressDetailsService;
-import com.finvoices.service.DefinitionDetailsService;
-import com.finvoices.service.InvoiceDetailsService;
+import com.finvoices.service.DatabaseRreaderWritter;
 import com.finvoices.service.ViewControllerService;
-import com.finvoices.service.ViewControllerServiceImpl;
 import com.finvoices.service.XmlPaserService;
-import com.finvoices.service.XmlPaserServiceImpl;
+import com.finvoices.serviceImpl.BuyerPartyDetailsServiceImpl;
+import com.finvoices.serviceImpl.BuyerPostalAddressDetailsServiceImpl;
+import com.finvoices.serviceImpl.DatabaseRreaderWritterImpl;
+import com.finvoices.serviceImpl.DefinitionDetailsServiceImpl;
+import com.finvoices.serviceImpl.InvoiceDetailsServiceImpl;
+import com.finvoices.serviceImpl.ViewControllerServiceImpl;
+import com.finvoices.serviceImpl.XmlPaserServiceImpl;
 
 
 @Configuration
@@ -120,25 +122,25 @@ public class ApplicationContextConfig {
     @Autowired
     @Bean(name = "buyerPostalAddressDetailsDAO")
     public BuyerPostalAddressDetailsDAO getBuyerPostalAddressDetailsDAO(SessionFactory sessionFactory) {
-    	return new BuyerPostalAddressDetailsService(sessionFactory);
+    	return new BuyerPostalAddressDetailsServiceImpl(sessionFactory);
     }
       
     @Autowired
     @Bean(name = "buyerPartyDetailsDAO")
     public BuyerPartyDetailsDAO getBuyerPartyDetailsDAO(SessionFactory sessionFactory) {
-    	return new BuyerPartyDetailsService(sessionFactory);
+    	return new BuyerPartyDetailsServiceImpl(sessionFactory);
     }
     
     @Autowired
     @Bean(name = "invoiceDetailsDAO")
     public InvoiceDetailsDAO getInvoiceDetails(SessionFactory sessionFactory) {
-    	return new InvoiceDetailsService(sessionFactory);
+    	return new InvoiceDetailsServiceImpl(sessionFactory);
     }
     
     @Autowired
     @Bean(name = "definitionDetailsDAO")
     public DefinitionDetailsDAO getDefinitionDetails(SessionFactory sessionFactory) {
-    	return new DefinitionDetailsService(sessionFactory);
+    	return new DefinitionDetailsServiceImpl(sessionFactory);
     }    
     
     
@@ -147,6 +149,13 @@ public class ApplicationContextConfig {
     public XmlPaserService getXmlPaserService(SessionFactory sessionFactory) {
     	return new XmlPaserServiceImpl();
     }
+
+    @Autowired
+    @Bean(name = "databaseRreaderWritter")
+    public DatabaseRreaderWritter getXmlDatabaseRreaderWritter(SessionFactory sessionFactory) {
+    	return new DatabaseRreaderWritterImpl();
+    }
+    
     
     @Autowired
     @Bean(name = "viewControllerService")

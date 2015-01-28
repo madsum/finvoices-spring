@@ -2,8 +2,6 @@ package com.finvoices.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,8 +22,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import com.finvoices.service.Utility;
-
+import com.finvoices.serviceImpl.Utility;
 
 
 /**
@@ -39,6 +36,8 @@ import com.finvoices.service.Utility;
 @Entity
 @Table(name = "invoiceDetails")
 public class InvoiceDetails implements java.io.Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	public InvoiceDetails(){
 
@@ -204,6 +203,19 @@ public class InvoiceDetails implements java.io.Serializable{
 	public void setDefinitionDetails(Set<DefinitionDetails> definitionDetails) {
 		this.definitionDetails = definitionDetails;
 	}
+	
+	String xmlFileName;
+
+	
+	@Column(name = "XmlFileName")
+	public String getXmlFileName() {
+		return xmlFileName;
+	}
+
+	public void setXmlFileName(String xmlFileName) {
+		this.xmlFileName = xmlFileName;
+	}
+
 
 
 	/**

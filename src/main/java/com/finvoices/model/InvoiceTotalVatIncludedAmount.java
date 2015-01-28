@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlValue;
  */
 public class InvoiceTotalVatIncludedAmount {
 	
+	
 	public InvoiceTotalVatIncludedAmount(){
 		
 	}

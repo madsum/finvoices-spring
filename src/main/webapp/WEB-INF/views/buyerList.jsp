@@ -22,6 +22,7 @@ table {font-size: 60%;}
 <th width="120px">Post name</th>
 <th width="120px">Post code</th>
 <th width="120px">Number of bill</th>
+<th width="120px">Xml file name</th>
 <th width="130px">actions</th>
 </tr>
 </thead>
@@ -34,10 +35,8 @@ table {font-size: 60%;}
 <td>${buyer.town}</td>
 <td>${buyer.postCode}</td>
 <td><a href="${pageContext.request.contextPath}/buyer/buyerInvoices/${buyer.id}">Number of ${buyer.numberOfInvoice}</a></td>
-<td>
-<%-- <a href="${pageContext.request.contextPath}/buyer/edit/${buyer.id}">Edit</a><br/> --%>
-<a href="${pageContext.request.contextPath}/buyer/delete/${buyer.id}">Delete</a><br/>
-</td>
+<td>${buyer.fileName}</td>
+<td><a href="${pageContext.request.contextPath}/buyer/delete/${buyer.id}">Delete</a></td>
 </tr>
 </c:forEach>
 </tbody>

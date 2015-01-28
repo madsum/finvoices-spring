@@ -10,5 +10,7 @@ import com.finvoices.model.BuyerPartyDetails;
 
 public interface ViewControllerService {
 	public void buyerInvoiceDetails(HashMap<Integer, List<BuyerInvoices>> buyerInvoiceMap, List<Buyer> buyerList );
+	public void buyerInvoiceDetailsByFile(HashMap<Integer, List<BuyerInvoices>> buyerInvoiceMap, List<Buyer> buyerList, String fileName );
 	public BuyerPartyDetails deleteBuyerAndInovice(int id) throws BuyerNotFound;
+	Buyer findUserByName(String userNname, HashMap<Integer, List<BuyerInvoices>> buyerInvoiceMap);
 }

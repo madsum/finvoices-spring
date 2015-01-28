@@ -27,11 +27,7 @@ import javax.xml.bind.annotation.XmlElements;
 @Entity
 @Table(name = "buyerPartyDetails")
 public class BuyerPartyDetails implements java.io.Serializable{
-	
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	public BuyerPartyDetails(){
@@ -85,9 +81,20 @@ public class BuyerPartyDetails implements java.io.Serializable{
 	public void setInvoiceDetails(Set<InvoiceDetails> invoiceDetails) {
 		this.invoiceDetails = invoiceDetails;
 	}
+	
+	//@Column(name = "XmlFileName")
+	String xmlFileName;
 
 	
-	
+	@Column(name = "XmlFileName")
+	public String getXmlFileName() {
+		return xmlFileName;
+	}
+
+	public void setXmlFileName(String xmlFileName) {
+		this.xmlFileName = xmlFileName;
+	}
+
 	/**
      * All properties setter and getter 
      */
@@ -122,7 +129,7 @@ public class BuyerPartyDetails implements java.io.Serializable{
 
 	// must annotate in getter method for database
 	// buyerPartyDetails.BuyerOrganisationName column
-	@Column(name = "BuyerOrganisationName")
+	@Column(name = "buyerOrganisationName")
     public String getBuyerOrganisationName ()
     {
         return BuyerOrganisationName;
@@ -150,7 +157,6 @@ public class BuyerPartyDetails implements java.io.Serializable{
         buyid = BuyerPartyIdentifier;
     }
     
-
 
 	@Override
 	public String toString() {

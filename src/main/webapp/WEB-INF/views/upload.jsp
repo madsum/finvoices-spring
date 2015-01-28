@@ -8,9 +8,9 @@
 
 	<form method="POST" action="upload" enctype="multipart/form-data">
 		Please upload Finvoices.xml file: <input type="file" name="file"><br />  <br />
-<!-- 		Name: <input type="text" name="name"><br /> <br />  -->
 		<input type="submit" value="Upload"> Press here to upload the file!
 	</form>
+	
 	
 </body>
 </html>

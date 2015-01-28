@@ -1,5 +1,9 @@
 package com.finvoices.model;
 
+/**
+ * BuyerInvoices combines basic number information and invoices information together
+ * @author masum
+ */
 public class BuyerInvoices {
 	
 	public BuyerInvoices(){
@@ -14,6 +18,14 @@ public class BuyerInvoices {
 	private String invoiceAmount;
 	private String invoiceDueDate;
 	private String invoiceFreeText;
+	private String fileName;
+	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 	
 	public String getInvoiceAmount() {
 		return invoiceAmount;

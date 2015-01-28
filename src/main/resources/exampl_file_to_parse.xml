@@ -8,8 +8,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -74,8 +74,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-04ZZ</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user 2</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -83,8 +83,8 @@
       </BuyerPostalAddressDetails>
     </BuyerPartyDetails>
     <DeliveryPartyDetails>
-      <DeliveryPartyIdentifier>241253-0426</DeliveryPartyIdentifier>
-      <DeliveryOrganisationName>LEIVO MERJA HANNELE</DeliveryOrganisationName>
+      <DeliveryPartyIdentifier>241253-04AA</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>Just delivery org</DeliveryOrganisationName>
       <DeliveryPostalAddressDetails>
         <DeliveryStreetName>PL 2026</DeliveryStreetName>
         <DeliveryPostCodeIdentifier>20025</DeliveryPostCodeIdentifier>
@@ -148,8 +148,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>070937-038J</BuyerPartyIdentifier>
-      <BuyerOrganisationName>HOKKA EILA MARGAREETA</BuyerOrganisationName>
+      <BuyerPartyIdentifier>070937-03AB</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Minna</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>AARNIVALKEANTIE 5 D 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -214,8 +214,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -280,8 +280,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -346,8 +346,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-04ZZ</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user 2</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -355,8 +355,8 @@
       </BuyerPostalAddressDetails>
     </BuyerPartyDetails>
     <DeliveryPartyDetails>
-      <DeliveryPartyIdentifier>241253-0426</DeliveryPartyIdentifier>
-      <DeliveryOrganisationName>LEIVO MERJA HANNELE</DeliveryOrganisationName>
+      <DeliveryPartyIdentifier>241253-04CC</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>Test 3</DeliveryOrganisationName>
       <DeliveryPostalAddressDetails>
         <DeliveryStreetName>PL 2026</DeliveryStreetName>
         <DeliveryPostCodeIdentifier>20025</DeliveryPostCodeIdentifier>
@@ -420,8 +420,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-04ZZ</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test use</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -494,8 +494,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-042X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -503,8 +503,8 @@
       </BuyerPostalAddressDetails>
     </BuyerPartyDetails>
     <DeliveryPartyDetails>
-      <DeliveryPartyIdentifier>241253-0426</DeliveryPartyIdentifier>
-      <DeliveryOrganisationName>LEIVO MERJA HANNELE</DeliveryOrganisationName>
+      <DeliveryPartyIdentifier>241253-04AA</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>Test</DeliveryOrganisationName>
       <DeliveryPostalAddressDetails>
         <DeliveryStreetName>PL 2026</DeliveryStreetName>
         <DeliveryPostCodeIdentifier>20025</DeliveryPostCodeIdentifier>
@@ -568,8 +568,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-042X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -577,8 +577,8 @@
       </BuyerPostalAddressDetails>
     </BuyerPartyDetails>
     <DeliveryPartyDetails>
-      <DeliveryPartyIdentifier>241253-0426</DeliveryPartyIdentifier>
-      <DeliveryOrganisationName>LEIVO MERJA HANNELE</DeliveryOrganisationName>
+      <DeliveryPartyIdentifier>241253-04AA</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>Test</DeliveryOrganisationName>
       <DeliveryPostalAddressDetails>
         <DeliveryStreetName>PL 2026</DeliveryStreetName>
         <DeliveryPostCodeIdentifier>20025</DeliveryPostCodeIdentifier>
@@ -642,8 +642,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-042X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -716,8 +716,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>070937-038J</BuyerPartyIdentifier>
-      <BuyerOrganisationName>HOKKA EILA MARGAREETA</BuyerOrganisationName>
+      <BuyerPartyIdentifier>070937-03FF</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test 4</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>AARNIVALKEANTIE 5 D 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -782,8 +782,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>241253-0426</BuyerPartyIdentifier>
-      <BuyerOrganisationName>LEIVO MERJA HANNELE</BuyerOrganisationName>
+      <BuyerPartyIdentifier>241253-042X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>SOUKANKAARI 1 C 53</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -791,8 +791,8 @@
       </BuyerPostalAddressDetails>
     </BuyerPartyDetails>
     <DeliveryPartyDetails>
-      <DeliveryPartyIdentifier>241253-0426</DeliveryPartyIdentifier>
-      <DeliveryOrganisationName>LEIVO MERJA HANNELE</DeliveryOrganisationName>
+      <DeliveryPartyIdentifier>241253-04FF</DeliveryPartyIdentifier>
+      <DeliveryOrganisationName>TEST/DeliveryOrganisationName>
       <DeliveryPostalAddressDetails>
         <DeliveryStreetName>PL 2026</DeliveryStreetName>
         <DeliveryPostCodeIdentifier>20025</DeliveryPostCodeIdentifier>
@@ -856,8 +856,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -922,8 +922,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>
@@ -988,8 +988,8 @@
     <SellerOrganisationUnitNumber>00370101263600228</SellerOrganisationUnitNumber>
     <InvoiceRecipientLanguageCode>fi</InvoiceRecipientLanguageCode>
     <BuyerPartyDetails>
-      <BuyerPartyIdentifier>121227-060A</BuyerPartyIdentifier>
-      <BuyerOrganisationName>PALMU HILKKA KUOLINPESÄ</BuyerOrganisationName>
+      <BuyerPartyIdentifier>121227-060X</BuyerPartyIdentifier>
+      <BuyerOrganisationName>Test user</BuyerOrganisationName>
       <BuyerPostalAddressDetails>
         <BuyerStreetName>KOLKEKANNAKSENTIE 10 D 7</BuyerStreetName>
         <BuyerTownName>ESPOO</BuyerTownName>

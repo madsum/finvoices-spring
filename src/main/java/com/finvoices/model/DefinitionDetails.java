@@ -26,10 +26,11 @@ import javax.xml.bind.annotation.XmlElements;
 @Table(name = "definitionDetails")
 public class DefinitionDetails implements java.io.Serializable{
 	
+	private static final long serialVersionUID = 1L;
+
 	public DefinitionDetails(){
 		
-	}
-	
+	}	
 	
 	/**
 	* For annotation all subsequent properties name must be presented as same as in XML file. 
@@ -59,7 +60,11 @@ public class DefinitionDetails implements java.io.Serializable{
         System.out.println("DefinitionHeaderText: "+DefinitionHeaderText.getContent());
    }
     
-    
+	// must annotate in getter method for database
+	@Column(name = "DefinitionHeaderText_attribute")
+	public String getDefinitionHeaderText_attribute() {
+		return definitionHeaderText_attribute;
+	}    
     
     private InvoiceDetails invoiceDetails;
     
@@ -97,11 +102,7 @@ public class DefinitionDetails implements java.io.Serializable{
 		DefinitionValue = definitionValue;
 	}
 	
-	// must annotate in getter method for database
-	@Column(name = "DefinitionHeaderText_attribute")
-	public String getDefinitionHeaderText_attribute() {
-		return definitionHeaderText_attribute;
-	}
+
 
 	public void setDefinitionHeaderText_attribute(
 			String definitionHeaderText_attribute) {
@@ -118,9 +119,7 @@ public class DefinitionDetails implements java.io.Serializable{
 		this.definitionHeaderText_value = definitionHeaderText_value;
 	}	
 
-
-
-@Override
+	@Override
    public String toString() {
 	   return "DefinitionDetails [DefinitionHeaderText="
 		+ DefinitionHeaderText + ", DefinitionValue=" + DefinitionValue
